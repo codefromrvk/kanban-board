@@ -5,7 +5,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import EditCardDialog from "./edit-card-dialog";
 import DeleteCardDialog from "./delete-card-dialog";
 
-const BoardColumn = ({ data, id }) => {
+const BoardColumn = ({ data, id }:{data:{_id:string,name:string,description:string,status:string}[],id:string}) => {
   return (
     <Droppable droppableId={id}>
       {(provided, snapshot) => (

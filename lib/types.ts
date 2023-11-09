@@ -1,7 +1,10 @@
 
+interface BaseDataType {
+    _id: string, name: string, description: string, status: string
+}
 export interface BoardDataType {
-    todo: Record<string, string>[];
-    inProgress: Record<string, string>[];
-    completed: Record<string, string>[];
-    board: Record<string, string>[];
-  }
+    todo: BaseDataType[];
+    inProgress: BaseDataType[];
+    completed: BaseDataType[];
+    board: BaseDataType[];
+}
